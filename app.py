@@ -4,9 +4,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return '''
-    <h1>مرحباً بكم في موقعي!</h1>
-    <p>هذا أول موقع أبنيه بـ Python</p>
-    '''
+    return '<h1>مرحباً بكم في موقعي!</h1><p>هذا أول موقع أبنيه بـ Python</p>'
 
-if __
+if __name__ == '__main__':
+    app.run(debug=True)
